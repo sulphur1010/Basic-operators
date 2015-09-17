@@ -81,6 +81,18 @@ public class MethodDefined {
  		System.out.println("Your result is " + result);
  	}
 
+ 	public static void average(int numbers) {
+ 		 Scanner in_2 = new Scanner(System.in);
+ 		 int sum = 0;
+ 		 float average_result = 0;
+ 		 for(int n= 1 ; n <= numbers; n++){
+ 		 	System.out.println("Enter no " + n );
+ 		 	 sum += in_2.nextInt();
+ 		 	 average_result = sum/numbers;
+ 		 }
+ 		System.out.println("Your result is " + average_result);
+ 	}
+
 
  		 	       
 
@@ -98,6 +110,7 @@ public class MethodDefined {
 		System.out.println("Enter 5 for modulo");
 		System.out.println("Enter 6 for square Root");
 		System.out.println("Enter 7 for power");
+		System.out.println("Enter 8 for average for power");
 		System.out.println("************************************************************************************");
 		System.out.println("************************************************************************************");
 
@@ -167,6 +180,15 @@ public class MethodDefined {
 			  secondNumber = in.nextDouble();
 			  power(firstNumber, secondNumber);
 		}
+
+		else if (number == 8){
+			 int firstNumber;
+			  System.out.println("Enter the number of numbers available");
+			  firstNumber = in.nextInt();
+			  average(firstNumber);
+		}
+
+
 
 
 		// sayMyName();
