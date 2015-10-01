@@ -53,7 +53,7 @@ public class MethodDefined {
  		System.out.println("Your result is " + result);
  	}
 
- 	public static void substract(int num1, int num2) {
+ 	public static void subt(int num1, int num2) {
  		int result = num1 - num2;
  		System.out.println("Your result is " + result);
  	}
@@ -104,7 +104,7 @@ public class MethodDefined {
 		System.out.println("*********************************************************************************");
 		System.out.println("Which function would you like to perform?");
 		System.out.println("Enter 1 for addition");
-		System.out.println("Enter 2 for substraction");
+		System.out.println("Enter 2 for subtion");
 		System.out.println("Enter 3 for division");
 		System.out.println("Enter 4 for multiplication");
 		System.out.println("Enter 5 for modulo");
@@ -135,7 +135,7 @@ public class MethodDefined {
 			  firstNumber = in.nextInt();
 			  System.out.println("Enter second number");
 			  secondNumber = in.nextInt();
-			  substract(firstNumber, secondNumber);
+			  subt(firstNumber, secondNumber);
 		}
 
 		else if (number == 3){
